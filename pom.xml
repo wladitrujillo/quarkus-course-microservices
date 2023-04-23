@@ -8,5 +8,7 @@
   <packaging>pom</packaging>
   <name>Building Microservices with Quarkus</name>
   <modules>
+    <module>rest-book</module>
+    <module>rest-number</module>
   </modules>
 </project>
