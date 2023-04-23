@@ -2,14 +2,15 @@ package org.agoncal.quarkus.microservices.number;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbTransient;
 import java.time.Instant;
 
 public class IsnbNumbers {
 
-    @JsonProperty("isbn_13")
+    @JsonbProperty("isbn_13")
     public String isbn13;
-    @JsonProperty("isbn_10")
+    @JsonbProperty("isbn_10")
     public String isbn10;
     @JsonbTransient
     public Instant generationDate;

@@ -16,8 +16,8 @@ public class NumberResourceTest {
                 .when().get("/api/numbers")
                 .then()
                 .statusCode(200)
-                .body("isbn13", containsString("13-"))
-                .body("isbn10", containsString("10-"));
+                .body("isbn_13", containsString("13-"))
+                .body("isbn_10", containsString("10-"));
     }
 
 }
