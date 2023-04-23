@@ -17,7 +17,7 @@ public class NumberResource {
     Logger logger;
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public IsnbNumbers generateIsbnNumbers() {
         IsnbNumbers isnbNumbers = new IsnbNumbers();
         isnbNumbers.isbn13 = "13-" + new Random().nextInt(100_000_000);
