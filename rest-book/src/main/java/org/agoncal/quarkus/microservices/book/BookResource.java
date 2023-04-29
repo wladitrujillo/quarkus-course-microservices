@@ -25,10 +25,10 @@ public class BookResource {
     public Response createABook(
             @FormParam("title") String title,
             @FormParam("author") String author,
-            @FormParam("yearOfPublication") int yearOfPublication,
+            @FormParam("year") int yearOfPublication,
             @FormParam("genre") String genre) {
         Book book = new Book();
-        book.isbn13 = "We will get it later from the number microservices";
+        book.isbn13 = "13-We will get it later from the number microservices";
         book.title = title;
         book.author = author;
         book.yearOfPublication = yearOfPublication;
